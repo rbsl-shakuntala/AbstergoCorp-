@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "shakuntala22/train-schedule:${BUILD_NUMBER}"
+        DOCKER_IMAGE = "shakuntala22/abstergocorp:${BUILD_NUMBER}"
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/cicd-pipeline-train-schedule-autodeploy.git'
+                git 'https://github.com/rbsl-shakuntala/AbstergoCorp-.git'
             }
         }
 
