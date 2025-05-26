@@ -32,7 +32,7 @@ pipeline {
 
         stage('Deploy to Kubernetes') {
             steps {
-                sh 'kubectl set image deployment/train-schedule train-schedule=${DOCKER_IMAGE}'
+                sh 'kubectl set image deployment/abstergoCorp abstergoCorp=${DOCKER_IMAGE}'
             }
         }
     }
